@@ -8,6 +8,7 @@ Create python environment...
 sudo pip install gunicorn flask mxnet pandas opencv-python
 
 MODEL:
+Note: if needed, load models with > python load.py
 > gunicorn --bind 0.0.0.0:5003 servImage:app
 
 SCORE:
