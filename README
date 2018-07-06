@@ -1,0 +1,14 @@
+
+Create container & then...
+sudo yum install epel-release
+sudo yum install python-pip
+sudo yum install libgomp
+
+Create python environment... 
+sudo pip install gunicorn flask mxnet pandas opencv-python
+
+MODEL:
+> gunicorn --bind 0.0.0.0:5003 servImage:app
+
+SCORE:
+> python post.py
