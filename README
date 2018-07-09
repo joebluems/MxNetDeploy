@@ -1,4 +1,5 @@
 
+* Setup the environment
 Create container & then...
 sudo yum install epel-release
 sudo yum install python-pip
@@ -7,9 +8,14 @@ sudo yum install libgomp
 Create python environment... 
 sudo pip install gunicorn flask mxnet pandas opencv-python
 
+* Download the model (if necessary) then serve it
 MODEL:
 Note: if needed, load models with > python load.py
 > gunicorn --bind 0.0.0.0:5003 servImage:app
+
+* Call the API via post (in python 3.6.3 + Anacoda)
+Note: you may need to customize your environment if you're posting from elsewhere
+sudo pip install tweepy (if you want to see the tweets)
 
 SCORE:
 > python post.py
