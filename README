@@ -5,7 +5,7 @@ sudo yum install epel-release
 sudo yum install python-pip
 sudo yum install libgomp
 
-Create python environment... 
+Create python environment... (for modeling and API we're using Python 2.7.5)
 sudo pip install gunicorn flask mxnet pandas opencv-python
 
 * Download the model (if necessary) then serve it
